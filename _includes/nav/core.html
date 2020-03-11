@@ -1,0 +1,61 @@
+<!-- The main site header to look like core SE site-->
+<div class="nav">
+  <div class="nav__top">
+
+    <div class="nav__top__mobile">
+      <!-- mobile menu icon -->
+      <div class="js-toggle-mobile-nav icon icon--menu"></div>
+    </div>
+
+    <div class="nav__top__logo">
+      <!-- SE logo  -->
+      {% include components/logo.html placement="header" %}
+    </div>
+
+    <div class="nav__top__nav">
+      <a class="nav__top__nav-link" href="https://www.secretescapes.com/invite-friends">Invite friends</a>
+      <a class="nav__top__nav-link" href="https://www.secretescapes.com/contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="nav__bottom">
+    <div class="nav__bottom__left">
+      <!-- nav list -->
+      <div class="nav__list">
+        <a class="nav__list-link" href="https://www.secretescapes.com/current-sales">Current Sales</a>
+        <a class="nav__list-link" href="https://www.secretescapes.com/spa">Spa</a>
+        <a class="nav__list-link" href="https://www.secretescapes.com/smartstays/filter">Smart Stays</a>
+        <a class="nav__list-link is-current" href="{{ site.baseurl }}">{{ site.title }}</a>
+      </div>
+    </div>
+    <div class="nav__bottom__right">
+      <a class="nav__list-link" href="https://www.secretescapes.com/my-favourites">My favourites</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- off canvas mobile menu -->
+<div class="mobile-nav is-closed">
+
+  <div class="mobile-nav__top mobile-nav__wrap">
+    <!-- close icon -->
+    <div class="js-toggle-mobile-nav icon icon--close"></div>
+  </div>
+
+  <div class="mobile-nav__middle mobile-nav__wrap">
+    <!-- nav list -->
+    <div class="mobile-nav__list">
+      <a class="mobile-nav__list-link" href="https://www.secretescapes.com/current-sales">Current Sales</a>
+      <a class="mobile-nav__list-link" href="https://www.secretescapes.com/spa">Spa</a>
+      <a class="mobile-nav__list-link" href="https://www.secretescapes.com/smartstays/filter">Smart Stays</a>
+      <a class="mobile-nav__list-link is-current" href="{{ site.baseurl }}">{{ site.title }}</a>
+    </div>
+  </div>
+
+</div>
