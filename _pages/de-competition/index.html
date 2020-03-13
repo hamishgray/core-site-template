@@ -1,5 +1,5 @@
 ---
-layout: banner
+layout: competition
 id: de-competition
 
 title: Compet&shy;ition
@@ -8,13 +8,14 @@ banner:
   content: >
     <div class="container container--no-padding">
       <div class="width width--xxl text--center">
-        <h1 class="title title--xxl">Lorem ipsum dolor sit amet</h1>
+        <h1 class="title title--xxl">Gewinnen Sie 1000 € für Ihren nächsten Urlaub</h1>
         <div class="space--sm"></div>
         <a href="#entry-form" class="btn btn--orange">Enter Now</a>
       </div>
     </div>
 
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur beatae tempora, voluptates ut recusandae ea exercitationem culpa mollitia quia similique. Perferendis cumque obcaecati ad pariatur. Quos iure sapiente amet beatae, officiis possimus minima expedita, ea ad. Doloribus et perspiciatis doloremque. Tenetur consequatur quam maiores odit, adipisci nostrum numquam quo mollitia eligendi! Debitis, culpa impedit, ex esse fugit enim quibusdam!
+intro: >
+  <p class="text--xl">Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
 competition-form:
   id: comp
@@ -35,61 +36,11 @@ competition-form:
 ---
 
 
-
-
-<div class="bg--light">
-  <div class="container">
-    <div class="space--xxl"></div>
-    <div class="width width--xl text--center">
-      <p class="text--xxl">{{page.intro}}</p>
-    </div>
-    <div class="space--xl"></div>
-    <div class="row row--constant-4-4-4 row--gutters-sm">
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/1.jpg');"></div>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/2.jpg');"></div>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--1-1 bg-img--lg-4-3 bg-img--xxl-3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/3.jpg');"></div>
-      </div>
-    </div>
-    <div class="space--xxl"></div>
+<div class="bg--black">
+  <div class="width width--xxl">
+    {% include offer/all-offers-dynamic.html sheet="Collection by ID" limit="6" %}
   </div>
-</div>
-
-<div class="vpad--xl">
-  <div class="container">
-    <div id="entry-form" class="vpad--md">
-      {% assign form = page.competition-form %}
-      <form class="form boilerform competition-form" action="{{form.post-url}}" method="POST" data-expires="{{form.expiry-date}}" novalidate>
-        {% include form/messages.html %}
-        <div class="form__content width width--md">
-          {% for item in form.fields %}
-            <div class="form__input js-form-input">
-              {% case item.type %}
-                {% when 'text' %}
-                  {% include form/text.html data=item %}
-                {% when 'text-long' %}
-                  {% include form/text-long.html data=item %}
-                {% when 'email' %}
-                  {% include form/email.html data=item %}
-                {% when 'radio' %}
-                  {% include form/radio.html data=item %}
-                {% when 'checkbox' %}
-                  {% include form/checkbox.html data=item %}
-                {% when 'select' %}
-                  {% include form/select.html data=item %}
-              {% endcase %}
-            </div>
-          {% endfor %}
-          <div class="space--sm"></div>
-          <p class="text--sm text--normal">{{form.terms}}</p>
-          <div class="space--sm"></div>
-          <button type="submit" class="c-button" disabled>{{form.submit}}</button>
-        </div>
-      </form>
-    </div>
+  <div class="width width--xxl vpad--xl text--center">
+    <a href="https://www.secretescapes.de/" class="btn btn--orange">Angebote ansehen</a>
   </div>
 </div>

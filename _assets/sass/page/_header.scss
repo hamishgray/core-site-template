@@ -80,7 +80,7 @@ $logo-bp: 600px;
         font-size: $s-1;
         font-weight: 700;
         display: inline-block;
-        &+&{padding-left: $s2;}
+        &+&{ padding-left: $s0; }
       }
     }
   }
@@ -130,7 +130,7 @@ $logo-bp: 600px;
     &-link {
       display: inline-block;
       padding: $s0 0;
-      &+&{padding-left: $s2;}
+      &+&{ padding-left: $s0; }
       font-weight: 500;
       font-size: $s0;
       &:last-child { padding-right: 0; }

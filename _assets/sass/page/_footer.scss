@@ -1,7 +1,7 @@
 // main footer for the microsite
 
 .site-footer {
-
+  background-color: $grey-darkest;
   &__wrap {
     @include page-padding;
     padding-top: $s6;
@@ -11,11 +11,9 @@
     text-align: center;
     background-color: $grey-darkest;
   }
-
   &__atol {
     max-width: 100px;
   }
-
 }
 
 
