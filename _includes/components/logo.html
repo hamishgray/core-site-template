@@ -1,3 +1,10 @@
-<a id="track-se-logo{{include.placement | prepend: '-'}}" class="logo{% if include.small %} logo--sm{% endif %}" href="{{site.se-link}}">
+
+{% if page.language %}
+  {% assign site-link = site.data.languages.[page.language].site-link %}
+{% else %}
+  {% assign site-link = site.data.languages.uk.site-link %}
+{% endif %}
+
+<a id="track-se-logo{{include.placement | prepend: '-'}}" class="logo{% if include.small %} logo--sm{% endif %}" href="{{site-link}}">
   <img src="{{site.img}}/logo/secret-escapes.svg" alt="Secret Escapes logo">
 </a>

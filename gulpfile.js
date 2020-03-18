@@ -27,7 +27,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/uk/template': '_site/'
+        '/de/2020/competition': '_site/'
       }
     }
   });
@@ -86,7 +86,6 @@ function buildJsMain(cb) {
     // components
     './_assets/js/_components/standard.js',
     './_assets/js/_components/modal.js',
-    './_assets/js/_components/modal-nav.js',
     // './_assets/js/_components/sticky-nav.js',
     './_assets/js/_components/form/functions.js',
     './_assets/js/_components/form/validation.js',

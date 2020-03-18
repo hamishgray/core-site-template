@@ -18,10 +18,9 @@ $(offerSections).each(function(){
   var limiter = offerSection.data('offer-limit') - 1;// -1 to balance against index number
 
   /*===== QUERY GOOGLE SHEET =====*/
-  var spreadsheetID = "14g1IiRy-0A3yFke6WRhvB_AOn_bNVESIDasUVcc93PM"; // ID of Google Spreadsheet
+  var spreadsheetID = "1zxamekaCtRcwWNUM-Ibr378jNoxQFOzB_RUkU-VNPPA"; // ID of Google Spreadsheet
   var apiKey = "AIzaSyBww8fHIRizAYPWsYyNGcRvLvzTLvvKmkw"; // API key for accessing G Sheet
   var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetID + "/values/" + sheetName + "!A3:Z?&key=" + apiKey;
-  console.log(url);
 
   // JSON request
   $.getJSON(url, function(data) {
@@ -48,7 +47,6 @@ $(offerSections).each(function(){
         var saleEndDate           = this[7];
         var saleURL               = this[9];
         var saleImage             = this[10];
-        console.log(saleTitle);
 
         offerSection.prepend('<div class="col"><div class="offer"><a class="offer__link" href="'+saleURL+'"><span class="btn btn--orange">View Offer</span></a><div class="bg-img bg-img--3-2" style="background-image: url('+saleImage+')"></div><div class="offer__content"><h3 class="title title--xs">'+saleTitle+'</h3><h4 class="offer__location">'+saleLocation+'</h4><div class="offer__description">'+saleDescription+'</div><div class="offer__bottom"><div class="offer__bottom-left"><div class="offer__saved"><div class="offer__saved-label">Save up to&nbsp;</div><div class="offer__saved-percent">'+saleDiscount+'%</div></div><div class="offer__separator"></div><div class="offer__details"><div>From <span class="offer__price">£'+salePrice+'</span></div><div class="text--sm">'+salePriceDescription+'</div><div class="js-offer-expires text--sm" data-expires="'+saleEndDate+'"></div></div></div><div class="offer__bottom-right"><div class="offer__arrow"></div></div></div></div></div></div>');
       }// end if

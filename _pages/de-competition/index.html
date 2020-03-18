@@ -2,45 +2,37 @@
 layout: competition
 id: de-competition
 
+language: de
+
 title: Compet&shy;ition
 
 banner:
   content: >
     <div class="container container--no-padding">
       <div class="width width--xxl text--center">
-        <h1 class="title title--xxl">Gewinnen Sie 1000 € für Ihren nächsten Urlaub</h1>
+        <h1 class="title title--xxl">Möchten Sie 1000€ für Ihre nächste Reise gewinnen?</h1>
         <div class="space--sm"></div>
-        <a href="#entry-form" class="btn btn--orange">Enter Now</a>
+        <a href="#offers" class="btn btn--orange">Angebote entdecken</a>
       </div>
     </div>
 
 intro: >
-  <p class="text--xl">Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  <p class="text--xl">Der Frühling naht - wir heißen ihn mit einem Gewinnspiel herzlich willkommen. Sie haben die Chance, einen Voucher über 1000€ tu gewinnen, ein Voucher, der drei Jahre lang gültig ist und für jede Buchung auf Secret Escapes verwendet werden kann.</p>
+  <hr class="hr--center">
+  <p>Bei jeder Buchung vom XXX bis zum XXX qualifizieren Sie sich automatisch für unser Gewinnspiel und haben die Möglichkeit, 1000€ als Reiseguthaben zu gewinnen.</p>
+  <p>Ob Sie dieses Guthaben auf einmal aufwenden oder damit mehrere Kurztrips finanzieren möchten, Ihre nächste Reise geht auf uns! Umso besser, dass der Gutschein 3 ganze Jahre lang gültig ist – so können Sie entscheiden, wann und wie Sie Ihren Gewinn einsetzen möchten.</p>
+  <p>Es gelten die <a href="javascript:void(0);" class="js-open-modal text--underline" data-modal-item="de-competition-terms">Allgemeinen Geschäftsbedingungen.</a></p>
 
-competition-form:
-  id: comp
-  post-url: "#getFormUrl"
-  expiry-date: 2050-01-01
-  fields:
-    - id: name
-      type: text
-      label: Name
-      required: true
-    - id: email
-      type: email
-      label: Email
-      required: true
-  submit: Submit Entry
-  terms: >
-    By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-open-modal="competition-terms">terms and conditions</a> of this competition
+
 ---
 
 
 <div class="bg--black">
-  <div class="width width--xxl">
-    {% include offer/all-offers-dynamic.html sheet="Collection by ID" limit="6" %}
+  <div id="offers"></div>
+  <div class="container container--xxl">
+    {% include offer/all-offers-dynamic.html sheet="Collection by formula" limit="6" %}
   </div>
-  <div class="width width--xxl vpad--xl text--center">
+  <div class="vpad--xl text--center">
     <a href="https://www.secretescapes.de/" class="btn btn--orange">Angebote ansehen</a>
   </div>
 </div>
