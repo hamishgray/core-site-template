@@ -2,6 +2,7 @@
 
 .site-footer {
   background-color: $grey-darkest;
+  font-size: 13px;
   &__wrap {
     @include page-padding;
     padding-top: $s6;
@@ -10,6 +11,35 @@
     font-weight: 400;
     text-align: center;
     background-color: $grey-darkest;
+  }
+  &__logos {
+    background-image: url('../img/footer/logos-uk.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 80%;
+    max-width: 552px;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 8%;
+    }
+  }
+  &__links {
+    margin: 0;
+    padding: 0;
+    & li {
+      list-style: none;
+      display: inline-block;
+      padding: 0;
+      margin-right: 10px;
+      margin-left: 0;
+      &:last-child { margin-right: 0; }
+      & a[href]:not([class]),
+      & a { color: $grey-lightest; }
+    }
   }
   &__atol {
     max-width: 100px;

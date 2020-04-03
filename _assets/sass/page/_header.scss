@@ -16,9 +16,7 @@ $core-nav-padding-sm: $s2;
 // ---------- NAV FOR CORE SE SITE ----------
 
 // the breakpoint for the core nav list to appear as the mobile nav
-$nav-list-bp: 870px;
-// the breakpoint for the logo to appear at the bottom of the mobile nav
-$logo-bp: 600px;
+$nav-list-bp: 960px;
 
 .nav {
   padding-left: $core-nav-padding-sm;
@@ -48,7 +46,6 @@ $logo-bp: 600px;
       display: flex;
       align-items: center;
       width: 25%;
-      @include bp($logo-bp) { width: 33.33%; }
       @include bp($nav-list-bp) { display: none; }
     }
     &__logo {
@@ -57,12 +54,11 @@ $logo-bp: 600px;
       justify-content: center;
       width: 50%;
       padding-top: $s0;
-      @include bp($logo-bp) {
+      padding-bottom: $s0;
+      @include bp($nav-list-bp) {
+        padding-bottom: 0;
         width: 33.33%;
         flex-grow: 3; // needed for firefox
-      }
-      @include bp($nav-list-bp) {
-        width: 66.66%;
         justify-content: flex-start;
       }
     }
@@ -72,7 +68,7 @@ $logo-bp: 600px;
       justify-content: flex-end;
       width: 25%;
       visibility: hidden;
-      @include bp($logo-bp) {
+      @include bp($nav-list-bp) {
         width: 33.33%;
         visibility: visible;
       }
@@ -87,7 +83,6 @@ $logo-bp: 600px;
 
   &__bottom {
     position: relative;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -95,15 +90,15 @@ $logo-bp: 600px;
     max-width: $xxxl;
     margin-left: auto;
     margin-right: auto;
+    display: none;
+    @include bp($nav-list-bp) { display: flex; }
     &__left {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       width: 50%;
-
       visibility: hidden;
-      @include bp($logo-bp) {
-        width: 33.33%;
+      @include bp($nav-list-bp) {
         visibility: visible;
       }
     }
@@ -112,10 +107,8 @@ $logo-bp: 600px;
       align-items: center;
       justify-content: flex-end;
       width: 50%;
-
       visibility: hidden;
-      @include bp($logo-bp) {
-        width: 33.33%;
+      @include bp($nav-list-bp) {
         visibility: visible;
       }
     }
@@ -189,6 +182,8 @@ $mobile-nav-width: 75%;
   &__top {
     display: flex;
     align-items: center;
+    height: 70px;
+    min-height: 70px;
 
   }
   &__middle {
@@ -203,7 +198,7 @@ $mobile-nav-width: 75%;
     padding: $s0;
     margin-top: $s2;
     background: rgba($grey-darker,.85);
-    @include bp($logo-bp){
+    @include bp($nav-list-bp){
       display: none;
     }
   }

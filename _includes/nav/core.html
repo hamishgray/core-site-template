@@ -1,8 +1,8 @@
 
-{% if page.language %}
-  {% assign nav = site.data.languages.[page.language].nav %}
+{% if page.locale %}
+  {% assign nav = site.data.locales.[page.locale].nav %}
 {% else %}
-  {% assign nav = site.data.languages.uk.nav %}
+  {% assign nav = site.data.locales.uk.nav %}
 {% endif %}
 
 <!-- The main site header to look like core SE site-->
