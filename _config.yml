@@ -6,10 +6,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/de/2020/competition" # the subpath of your site, e.g. /blog/
-img:     "/de/2020/competition/_assets/img"
-css:     "/de/2020/competition/_assets/css"
-js:      "/de/2020/competition/_assets/js"
+baseurl: "/uk/2020/competition" # the subpath of your site, e.g. /blog/
+img:     "/uk/2020/competition/_assets/img"
+css:     "/uk/2020/competition/_assets/css"
+js:      "/uk/2020/competition/_assets/js"
 
 
 # Build settings

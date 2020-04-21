@@ -1,10 +1,16 @@
 
-{% if page.language %}
-  {% assign site-link = site.data.languages.[page.language].site-link %}
+{% if page.locale %}
+  {% assign site-link = site.data.locales.[page.locale].site-link %}
 {% else %}
-  {% assign site-link = site.data.languages.uk.site-link %}
+  {% assign site-link = site.data.locales.uk.site-link %}
+{% endif %}
+
+{% if page.locale == 'fr' %}
+  {% assign logo = "evasions-secretes.svg" %}
+{% else %}
+  {% assign logo = "secret-escapes.svg" %}
 {% endif %}
 
 <a id="track-se-logo{{include.placement | prepend: '-'}}" class="logo{% if include.small %} logo--sm{% endif %}" href="{{site-link}}">
-  <img src="{{site.img}}/logo/secret-escapes.svg" alt="Secret Escapes logo">
+  <img src="{{site.img}}/logo/{{logo}}" alt="Secret Escapes logo">
 </a>

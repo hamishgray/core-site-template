@@ -6,68 +6,34 @@
 
 <footer class="site-footer">
 
+  {% if locale.footer.as-featured %}
   <div class="bg--grey-darkest vpad--md text--white">
     <div class="container">
       <p>{{locale.footer.as-featured}}</p>
       <div class="site-footer__logos" style="background-image: url({{site.img}}/footer/logos-{{page.locale}}.jpg);"></div>
     </div>
   </div>
+  {% endif %}
 
   <div class="bg--black vpad--md text--white">
     <div class="container">
       <div class="row">
+        {% if locale.footer.nav %}
         <!-- SECRET ESCAPES -->
         <div class="col col--2">
           <strong>Secret Escapes</strong>
         </div>
         <div class="col col--10">
           <ul class="site-footer__links">
-            {{locale.footer.links}}
+            {% for item in locale.footer.nav %}
+              <li><a href="{{item.link}}">{{item.text}}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <div class="col col--12">
           <hr class="hr--light hr--long hr--no-space">
         </div>
-        <!-- COLLECTIONS -->
-        <!-- <div class="col col--2">
-          <strong>Collections</strong>
-        </div>
-        <div class="col col--10">
-          <ul class="site-footer__links">
-            <li><a href="https://www.secretescapes.com/spa/filter" id="spaLink" locale="en_GB">Spa breaks</a></li>
-            <li><a href="https://www.secretescapes.com/boutique/filter" id="boutiqueLink" locale="en_GB">Boutique hotels</a></li>
-            <li><a href="https://www.secretescapes.com/beach/filter" id="beachLink" locale="en_GB">Beach holidays</a></li>
-            <li><a href="https://www.secretescapes.com/city/filter" id="cityLink" locale="en_GB">City breaks</a></li>
-            <li><a href="https://www.secretescapes.com/activities/filter" id="activitiesLink" locale="en_GB">Activity holidays</a></li>
-            <li><a href="https://www.secretescapes.com/country/filter" id="countryLink" locale="en_GB">Country breaks</a></li>
-            <li><a href="https://www.secretescapes.com/europe/filter" id="europeLink" locale="en_GB">Holidays in Europe</a></li>
-            <li><a href="https://www.secretescapes.com/romantic/filter" id="romanticLink" locale="en_GB">Romantic breaks</a></li>
-            <li><a href="https://www.secretescapes.com/family/filter" id="familyLink" locale="en_GB">Family-friendly stays</a></li>
-            <li><a href="https://www.secretescapes.com/flights/filter" id="flightsLink" locale="en_GB">Holidays with flights</a></li>
-            <li><a href="https://www.secretescapes.com/weekend-breaks/filter" id="weekend-breaksLink" locale="en_GB">Weekend breaks</a></li>
-            <li><a href="https://www.secretescapes.com/all-inclusive/filter" id="all-inclusiveLink" locale="en_GB">All-Inclusive Holidays</a></li>
-            <li><a href="https://www.secretescapes.com/honeymoon/filter" id="honeymoonLink" locale="en_GB">Honeymoon packages &amp; hotels</a></li>
-            <li><a href="https://www.secretescapes.com/smartstays/filter" id="smartstaysLink" locale="en_GB">Smart stays</a></li>
-            <li><a href="https://www.secretescapes.com/northern-lights-iceland-lapland/filter" id="northern-lights-iceland-laplandLink" locale="en_GB">Northern Lights Holidays</a></li>
-            <li><a href="https://www.secretescapes.com/uk-country-under-99/filter" id="uk-country-under-99Link" locale="en_GB">UK countryside under £99</a></li>
-            <li><a href="https://www.secretescapes.com/winter-wonderland/filter" id="winter-wonderlandLink" locale="en_GB">Winter wonderland</a></li>
-            <li><a href="https://www.secretescapes.com/london-stays/filter" id="london-staysLink" locale="en_GB">London breaks</a></li>
-            <li><a href="https://www.secretescapes.com/far-flung-beach/filter" id="far-flung-beachLink" locale="en_GB">Far-Flung Sun Escapes</a></li>
-            <li><a href="https://www.secretescapes.com/nyc-new-york/filter" id="nyc-new-yorkLink" locale="en_GB">NYC Breaks</a></li>
-            <li><a href="https://www.secretescapes.com/uk-spa-breaks/filter" id="uk-spa-breaksLink" locale="en_GB">UK Spa Breaks</a></li>
-            <li><a href="https://www.secretescapes.com/rome-breaks/filter" id="rome-breaksLink" locale="en_GB">Rome City Breaks</a></li>
-            <li><a href="https://www.secretescapes.com/paris-breaks/filter" id="paris-breaksLink" locale="en_GB">Paris City Breaks</a></li>
-            <li><a href="https://www.secretescapes.com/lake-district-breaks/filter" id="lake-district-breaksLink" locale="en_GB">Lake District Breaks</a></li>
-            <li><a href="https://www.secretescapes.com/greek-chic/filter" id="greek-chicLink" locale="en_GB">Greece Holidays</a></li>
-            <li><a href="https://www.secretescapes.com/extraordinaryescapes/filter" id="extraordinaryescapesLink" locale="en_GB">Extraordinary escapes</a></li>
-            <li><a href="https://www.secretescapes.com/adults-only-escapes-holidays/filter" id="adults-only-escapes-holidaysLink" locale="en_GB">Adults-only Holidays</a></li>
-            <li><a href="https://www.secretescapes.com/autumn-escapes/filter" id="autumn-escapesLink" locale="en_GB">Autumn Escapes</a></li>
-            <li><a href="https://www.secretescapes.com/2019-summer-holidays/filter" id="2019-summer-holidaysLink" locale="en_GB">Summer 2020 Escapes</a></li>
-            <li><a href="https://www.secretescapes.com/scotland-breaks-uk/filter" id="scotland-breaks-ukLink" locale="en_GB">Our finest Scotland stays</a></li>
-            <li><a href="https://www.secretescapes.com/amsterdam-breaks/filter" id="amsterdam-breaksLink" locale="en_GB">Amsterdam Hotels</a></li>
-            <li><a href="https://www.secretescapes.com/refundable/filter" id="refundableLink" locale="en_GB">Refundable stays</a></li>
-          </ul>
-        </div> -->
+        {% endif %}
         <!-- COPYRIGHT -->
         <div class="col col--12">
           <p class="text--sm">© Copyright <span class="js-year">2020</span> Secret Escapes</p>

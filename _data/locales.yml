@@ -1,7 +1,7 @@
 
 
 ##################################################################################################
-# UK
+# United Kingdom
 #
 
 uk:
@@ -27,25 +27,63 @@ uk:
 
   footer:
     as-featured: As featured in
-    links: >
-      <li><a href="https://www.secretescapes.com/about-us" locale="en_GB">About us</a></li>
-      <li><a href="https://www.secretescapes.com/contact" locale="en_GB">Contact</a></li>
-      <li><a href="http://careers.secretescapes.com/">Jobs</a></li>
-      <li><a href="https://www.secretescapes.com/faq" locale="en_GB">FAQ</a></li>
-      <li><a href="https://www.secretescapes.com/terms-and-conditions" locale="en_GB">Terms and Conditions</a></li>
-      <li><a href="https://www.secretescapes.com/bespoke-travel" locale="en_GB">Bespoke holidays</a></li>
-      <li><a href="https://www.secretescapes.com/flightFinder" locale="en_GB">Flight Finder</a></li>
-      <li><a href="https://d1x3cbuht6sy0f.cloudfront.net/legal/slaveryStatement.pdf" target="_blank">Modern Slavery Statement</a></li>
-      <li><a href="https://www.secretescapes.com/all-inclusive/filter" locale="en_GB">Collections</a></li>
-      <li><a href="https://www.secretescapes.com/smugface" locale="en_GB">#smugface</a></li>
-      <li><a href="https://www.secretescapes.com/how-it-works" id="howItWorksFooterLink" locale="en_GB">How it works</a></li>
-      <li><a href="https://www.secretescapes.com/uk/addyourhotel">Add your Hotel</a></li>
-      <li><a href="https://www.secretescapes.com/privacy-policy" locale="en_GB">Privacy policy</a></li>
-      <li><a href="https://www.secretescapes.com/vouchers-offer" locale="en_GB">Gift Vouchers</a></li>
+    nav:
+      - link: https://www.secretescapes.com/about-us
+        text: About us
+      - link: https://www.secretescapes.com/contact
+        text: Contact
+      - link: http://careers.secretescapes.com/
+        text: Jobs
+      - link: https://www.secretescapes.com/faq
+        text: FAQ
+      - link: https://www.secretescapes.com/terms-and-conditions
+        text: Terms and Conditions
+      - link: https://www.secretescapes.com/bespoke-travel
+        text: Bespoke holidays
+      - link: https://www.secretescapes.com/flightFinder
+        text: Flight Finder
+      - link: https://d1x3cbuht6sy0f.cloudfront.net/legal/slaveryStatement.pdf
+        text: Modern Slavery Statement
+      - link: https://www.secretescapes.com/all-inclusive/filter
+        text: Collections
+      - link: https://www.secretescapes.com/smugface
+        text: "#smugface"
+      - link: https://www.secretescapes.com/how-it-works
+        text: How it works
+      - link: https://www.secretescapes.com/uk/addyourhotel
+        text: Add your Hotel
+      - link: https://www.secretescapes.com/privacy-policy
+        text: Privacy policy
+      - link: https://www.secretescapes.com/vouchers-offer
+        text: Gift Vouchers
 
 
 ##################################################################################################
-# DE
+# United States
+#
+
+us:
+  site-link: https://us.secretescapes.com/
+  nav:
+    top:
+      - link: https://us.secretescapes.com/invite-friends
+        text: Invite friends
+      - link: https://us.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://us.secretescapes.com/current-sales
+        text: Current Sales
+      - link: https://us.secretescapes.com/nyc-on-sale/filter
+        text: NYC
+      - link: https://secure.rezserver.com/?refid=8597
+        text: US cities
+    main-right:
+      - link: https://us.secretescapes.com/my-favourites
+        text: My favorites
+
+
+##################################################################################################
+# Germany
 #
 
 de:
@@ -69,21 +107,31 @@ de:
 
   footer:
     as-featured: Bekannt aus
-    links: >
-      <li><a href="https://www.secretescapes.de/ueber-uns" locale="de_DE">Über uns</a></li>
-      <li><a href="https://www.secretescapes.de/kontakt-und-impressum" locale="de_DE">Kontakt &amp; Impressum</a></li>
-      <li><a href="http://careers.secretescapes.de/">Offene Stellen</a></li>
-      <li><a href="https://www.secretescapes.de/faq" locale="de_DE">FAQ</a></li>
-      <li><a href="https://www.secretescapes.de/agb" locale="de_DE">AGB</a></li>
-      <li><a href="https://www.secretescapes.de/adultsonly/filter" locale="de_DE">Kollektionen</a></li>
-      <li><a href="https://www.secretescapes.de/werdensiepartner">Werden Sie Partner</a></li>
-      <li><a href="https://www.secretescapes.de/datenschutzerklaerung" locale="de_DE">Datenschutzhinweise</a></li>
-      <li><a href="https://www.secretescapes.de/zahlungsinformationen" locale="de_DE">Zahlungsinformationen</a></li>
-      <li><a href="https://www.secretescapes.de/geschenkgutscheine" locale="de_DE">Gutscheine</a></li>
+    nav:
+      - link: https://www.secretescapes.de/ueber-uns
+        text: Über uns
+      - link: https://www.secretescapes.de/kontakt-und-impressum
+        text: Kontakt &amp; Impressum
+      - link: http://careers.secretescapes.de/
+        text: Offene Stellen
+      - link: https://www.secretescapes.de/faq
+        text: FAQ
+      - link: https://www.secretescapes.de/agb
+        text: AGB
+      - link: https://www.secretescapes.de/adultsonly/filter
+        text: Kollektionen
+      - link: https://www.secretescapes.de/werdensiepartner
+        text: Werden Sie Partner
+      - link: https://www.secretescapes.de/datenschutzerklaerung
+        text: Datenschutzhinweise
+      - link: https://www.secretescapes.de/zahlungsinformationen
+        text: Zahlungsinformationen
+      - link: https://www.secretescapes.de/geschenkgutscheine
+        text: Gutscheine
 
 
 ##################################################################################################
-# IT
+# Italy
 #
 
 it:
@@ -109,22 +157,32 @@ it:
 
   footer:
     as-featured: Parlano di noi
-    links: >
-      <li><a href="https://it.secretescapes.com/chi-siamo" locale="it_IT">Chi siamo</a></li>
-      <li><a href="https://it.secretescapes.com/contattaci" locale="it_IT">Contattaci</a></li>
-      <li><a href="http://careers.secretescapes.it">Offerte di lavoro</a></li>
-      <li><a href="https://it.secretescapes.com/domande-frequenti" locale="it_IT">Domande frequenti</a></li>
-      <li><a href="https://it.secretescapes.com/termini-e-condizioni" locale="it_IT">Termini e Condizioni</a></li>
-      <li><a href="https://it.secretescapes.com/24-ore/filtra" locale="it_IT">Collezioni</a></li>
-      <li><a href="https://it.secretescapes.com/diventapartner">Diventa partner</a></li>
-      <li><a href="https://it.secretescapes.com/normativa-privacy" locale="it_IT">Informativa sulla privacy</a></li>
-      <li><a href="https://it.secretescapes.com/account/index" locale="it_IT"></a></li>
-      <li><a href="https://it.secretescapes.com/offerta-voucher" locale="it_IT">Buoni regalo</a></li>
+    nav:
+      - link: https://it.secretescapes.com/chi-siamo
+        text: Chi siamo
+      - link: https://it.secretescapes.com/contattaci
+        text: Contattaci
+      - link: http://careers.secretescapes.it
+        text: Offerte di lavoro
+      - link: https://it.secretescapes.com/domande-frequenti
+        text: Domande frequenti
+      - link: https://it.secretescapes.com/termini-e-condizioni
+        text: Termini e Condizioni
+      - link: https://it.secretescapes.com/24-ore/filtra
+        text: Collezioni
+      - link: https://it.secretescapes.com/diventapartner
+        text: Diventa partner
+      - link: https://it.secretescapes.com/normativa-privacy
+        text: Informativa sulla privacy
+      - link: https://it.secretescapes.com/account/index
+        text:
+      - link: https://it.secretescapes.com/offerta-voucher
+        text: Buoni regalo
 
 
 
 ##################################################################################################
-# SE
+# Sweden
 #
 
 se:
@@ -150,17 +208,263 @@ se:
 
   footer:
     as-featured: Synts i media
-    links: >
-      <li><a href="https://www.secretescapes.se/om-oss" locale="sv">Om oss</a></li>
-      <li><a href="https://www.secretescapes.se/kontakt" locale="sv">Kontakta oss</a></li>
-      <li><a href="http://careersnordics.secretescapes.com">Lediga jobb</a></li>
-      <li><a href="https://www.secretescapes.se/vanliga-fragor" locale="sv">Vanliga frågor</a></li>
-      <li><a href="https://www.secretescapes.se/regler-och-villkor" locale="sv">Regler och villkor</a></li>
-      <li><a href="https://www.secretescapes.se/72hsupersale/filter" locale="sv">Kollektioner</a></li>
-      <li><a href="https://www.secretescapes.se/blipartner">Bli partner</a></li>
-      <li><a href="https://www.secretescapes.se/integritetspolicy" locale="sv">Integritetspolicy</a></li>
-      <li><a href="https://www.secretescapes.se/account/index" locale="sv"></a></li>
-      <li><a href="https://www.secretescapes.se/presentkort-offer" locale="sv">Presentkort</a></li>
+    nav:
+      - link: https://www.secretescapes.se/om-oss
+        text: Om oss
+      - link: https://www.secretescapes.se/kontakt
+        text: Kontakta oss
+      - link: http://careersnordics.secretescapes.com
+        text: Lediga jobb
+      - link: https://www.secretescapes.se/vanliga-fragor
+        text: Vanliga frågor
+      - link: https://www.secretescapes.se/regler-och-villkor
+        text: Regler och villkor
+      - link: https://www.secretescapes.se/72hsupersale/filter
+        text: Kollektioner
+      - link: https://www.secretescapes.se/blipartner
+        text: Bli partner
+      - link: https://www.secretescapes.se/integritetspolicy
+        text: Integritetspolicy
+      - link: https://www.secretescapes.se/account/index
+        text:
+      - link: https://www.secretescapes.se/presentkort-offer
+        text: Presentkort
+
+
+##################################################################################################
+# Denmark
+#
+
+dk:
+  site-link: https://dk.secretescapes.com/
+  nav:
+    top:
+      - link: https://dk.secretescapes.com/inviter-venner
+        text: Inviter venner
+      - link: https://dk.secretescapes.com/kontakt
+        text: Kontakt
+    main:
+      - link: https://dk.secretescapes.com/nuvaerende-salg
+        text: Aktuelle tilbud
+      - link: https://dk.secretescapes.com/how-it-works
+        text: Sådan fungerer det
+      - link: https://dk.secretescapes.com/gavekort
+        text: Gavekort
+    main-right:
+      - link: https://dk.secretescapes.com/dine-favoritter
+        text: Dine favoritter
+
+
+##################################################################################################
+# Norway
+#
+
+no:
+  site-link: https://no.secretescapes.com/
+  nav:
+    top:
+      - link: https://no.secretescapes.com/inviter-venner
+        text: Inviter venner
+      - link: https://no.secretescapes.com/kontakt
+        text: Kontakt
+    main:
+      - link: https://no.secretescapes.com/aktuelle-tilbud
+        text: Aktuelle tilbud
+      - link: https://no.secretescapes.com/how-it-works
+        text: Slik funker det
+      - link: https://no.secretescapes.com/drmmehotell/filter
+        text: WOW-faktor
+    main-right:
+      - link: https://no.secretescapes.com/mine-favoritter
+        text: Mine favoritter
+
+
+##################################################################################################
+# Switzerland
+#
+
+ch:
+  site-link: https://ch.secretescapes.com/
+  nav:
+    top:
+      - link: https://ch.secretescapes.com/freunde-einladen
+        text: Empfehlen Sie uns
+      - link: https://ch.secretescapes.com/kontakt-und-impressum
+        text: Kontakt & Impressum
+    main:
+      - link: https://ch.secretescapes.com/current-sales
+        text: Aktuelle Angebote
+      - link: https://ch.secretescapes.com/unser-geheimnis
+        text: Unser Geheimnis
+    main-right:
+      - link: https://ch.secretescapes.com/meine-favoriten
+        text: Meine Favoriten
+
+
+##################################################################################################
+# France
+#
+
+fr:
+  site-link: https://www.evasionssecretes.fr/
+  nav:
+    top:
+      - link: https://www.evasionssecretes.fr/invitation-amis
+        text: Invitez des amis
+      - link: https://www.evasionssecretes.fr/contact
+        text: Contact
+    main:
+      - link: https://www.evasionssecretes.fr/vente-promotion
+        text: Ventes en cours
+      - link: https://www.evasionssecretes.fr/coupons-offres
+        text: Nos chèques cadeaux !
+      - link: https://evasionssecretes.perfectstay.com/fr-FR/listing
+        text: Séjours hotels
+    main-right:
+      - link: https://www.evasionssecretes.fr/mes-favoris
+        text: Mes favoris
+
+
+##################################################################################################
+# Netherlands
+#
+
+nl:
+  site-link: https://nl.secretescapes.com/
+  nav:
+    top:
+      - link: https://nl.secretescapes.com/nodig-vrienden-uit
+        text: Deel met vrienden
+      - link: https://nl.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://nl.secretescapes.com/aanbiedingen
+        text: Actuele aanbiedingen
+    main-right:
+      - link: https://nl.secretescapes.com/mijn-favorieten
+        text: Mijn favorieten
+
+
+##################################################################################################
+# Belgium
+#
+
+be:
+  site-link: https://be.secretescapes.com/
+  nav:
+    top:
+      - link: https://be.secretescapes.com/nodig-vrienden-uit
+        text: Deel met vrienden
+      - link: https://be.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://be.secretescapes.com/aanbiedingen
+        text: Actuele aanbiedingen
+    main-right:
+      - link: https://be.secretescapes.com/mijn-favorieten
+        text: Mijn favorieten
+
+
+##################################################################################################
+# Spain
+#
+
+es:
+  site-link: https://es.secretescapes.com/
+  nav:
+    top:
+      - link: https://es.secretescapes.com/invita-amigos
+        text: Invita a tus amigos
+      - link: https://es.secretescapes.com/contacto
+        text: Contacto
+    main:
+      - link: https://es.secretescapes.com/ventas-actuales
+        text: Ventas disponibles
+      - link: https://es.secretescapes.com/oferta-cupon
+        text: Vales regalo
+    main-right:
+      - link: https://es.secretescapes.com/mis-favoritos
+        text: Mis Favoritos
+
+
+##################################################################################################
+# Singapore
+#
+
+sg:
+  site-link: https://sg.secretescapes.com/
+  nav:
+    top:
+      - link: https://sg.secretescapes.com/invite-friends
+        text: Invite friends
+      - link: https://sg.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://sg.secretescapes.com/current-sales
+        text: Current Sales
+    main-right:
+      - link: https://sg.secretescapes.com/my-favourites
+        text: My favourites
+
+
+##################################################################################################
+# Hong Kong
+#
+
+hk:
+  site-link: https://hk.secretescapes.com/
+  nav:
+    top:
+      - link: https://hk.secretescapes.com/invite-friends
+        text: Invite friends
+      - link: https://hk.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://hk.secretescapes.com/current-sales
+        text: Current Sales
+    main-right:
+      - link: https://hk.secretescapes.com/my-favourites
+        text: My favourites
+
+
+##################################################################################################
+# Indonesia
+#
+
+id:
+  site-link: https://id.secretescapes.com/
+  nav:
+    top:
+      - link: https://id.secretescapes.com/invite-friends
+        text: Invite friends
+      - link: https://id.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://id.secretescapes.com/current-sales
+        text: Current Sales
+    main-right:
+      - link: https://id.secretescapes.com/my-favourites
+        text: My favourites
+
+
+##################################################################################################
+# Malaysia
+#
+
+my:
+  site-link: https://my.secretescapes.com/
+  nav:
+    top:
+      - link: https://my.secretescapes.com/invite-friends
+        text: Invite friends
+      - link: https://my.secretescapes.com/contact
+        text: Contact
+    main:
+      - link: https://my.secretescapes.com/current-sales
+        text: Current Sales
+    main-right:
+      - link: https://my.secretescapes.com/my-favourites
+        text: My favourites
 
 
 
